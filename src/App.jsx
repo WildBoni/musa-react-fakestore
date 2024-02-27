@@ -1,13 +1,14 @@
+import { useState } from "react";
 import Categories from "./Categories"
 import Products from "./Products"
 
 function App() {
-
-  let selectedCategory = 'electronics';
+  let [selectedCategory, setSelectedCategory] = useState('electronics');
+  // let selectedCategory = 'electronics';
   
   return (
     <>
-      <Categories />
+      <Categories handleClick={setSelectedCategory}/>
       <Products category={selectedCategory} />
     </>
   )

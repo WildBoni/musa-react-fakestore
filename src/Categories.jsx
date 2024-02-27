@@ -1,9 +1,11 @@
 import categories from "./data/categories"
 
-export default function Categories() {
-  // console.log(categories)
+export default function Categories({handleClick}) {
+  
   let categoriesList = categories.map(category => 
-    <button key={category}>{category}</button>
+    <button onClick={() => handleClick(category)} key={category}>
+      {category}
+    </button>
   )
 
   return (
