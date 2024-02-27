@@ -1,0 +1,11 @@
+body {
+  background-color: lightblue;
+}
+article {
+  background-color: white;
+  padding: 1rem;
+  margin: 1rem;
+}
+img {
+  max-width: 200px;
+}
