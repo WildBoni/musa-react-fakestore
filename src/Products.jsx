@@ -1,15 +1,15 @@
 import products from './data/products';
 import Product from "./Product"
 
-export default function Products() {
+export default function Products({category}) {
 
   let productList = products
     .filter(
-      product => product.category === 'electronics'
+      product => product.category === category
     )
     .map(
-      product => <Product productDetails={product} />
-    )
+      product => <Product productDetails={product} key={product.id} />
+    );
 
   return (
     <div>

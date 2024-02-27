@@ -3,7 +3,7 @@ import categories from "./data/categories"
 export default function Categories() {
   // console.log(categories)
   let categoriesList = categories.map(category => 
-    <button>{category}</button>
+    <button key={category}>{category}</button>
   )
 
   return (

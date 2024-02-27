@@ -3,10 +3,12 @@ import Products from "./Products"
 
 function App() {
 
+  let selectedCategory = 'electronics';
+  
   return (
     <>
       <Categories />
-      <Products />
+      <Products category={selectedCategory} />
     </>
   )
 }
