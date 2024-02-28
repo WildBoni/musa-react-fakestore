@@ -13,7 +13,7 @@ export default function Products({category}) {
         setProducts('');
         setIsLoading(true);
         try {
-          let res = await fetch(`https://sdffakestoreapi.com/products/category/${category}`)
+          let res = await fetch(`https://fakestoreapi.com/products/category/${category}`)
           let data = await res.json();
           setProducts(data);
         } catch(error) {
