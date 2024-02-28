@@ -11,6 +11,7 @@ export default function Products({category}) {
     () => {
       async function fetchProducts() {
         setProducts('');
+        setError('');
         setIsLoading(true);
         try {
           let res = await fetch(`https://fakestoreapi.com/products/category/${category}`)
